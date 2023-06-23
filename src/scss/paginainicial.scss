@@ -1,0 +1,47 @@
+$preto:#140f07;
+$azulEscuro:#112b58;
+$azul:#4760b8;
+$azulClaro: #929dfb;
+$branco:#f8e4f6;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $preto;
+    header {
+        nav {
+            display: flex;
+            height: 50px;
+            background-color: $azulEscuro;
+            div {
+                display: inherit;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                color: $branco;
+            }
+        }
+    }
+    section {
+        display: flex;
+        main {
+            flex: 1;
+            text-align: center;
+            display: inherit;
+            justify-content: center;
+            align-items: center;
+            background-color: $azul;
+            position: relative;
+            height: calc(100vh - 50px);
+            h1 {
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        aside {
+            background-color: #929dfb;
+            flex: 2;
+        }
+    }
+}
