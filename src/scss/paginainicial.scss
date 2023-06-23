@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Russo+One&display=swap');
 $preto:#140f07;
 $azulEscuro:#112b58;
 $azul:#4760b8;
 $azulClaro: #929dfb;
 $branco:#f8e4f6;
 body {
+    font-family: 'Bacasime Antique', serif;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
     background-color: $preto;
@@ -18,30 +21,71 @@ body {
                 align-items: center;
                 flex: 1;
                 color: $branco;
+                font-weight: 900;
             }
         }
     }
     section {
         display: flex;
-        main {
-            flex: 1;
+        main.sobre {
+            flex: 1.5;
             text-align: center;
             display: inherit;
             justify-content: center;
             align-items: center;
-            background-color: $azul;
             position: relative;
             height: calc(100vh - 50px);
             h1 {
                 justify-content: center;
                 align-items: center;
-                padding: 0;
-                margin: 0;
+                color: $branco;
+                font-size: 2em;
+                font-family: 'Russo One', sans-serif;
+                letter-spacing: 5px;
             }
         }
-        aside {
-            background-color: #929dfb;
+        aside.criptos {
+            background-color: $branco;
+            color: $azulEscuro;
             flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h2 {
+                font-size: 2em;
+            }
+            div {
+                width: 40%;
+                display: initial;
+                flex-direction: column;
+                .moeda {
+                    box-sizing: border-box;
+                    padding: 0;
+                    width: calc(100% - 20px);
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .nome {
+                        flex: 1;
+                        span {
+                            font-size: 1.5rem;
+                            font-family: 'Courier New', Courier, monospace;
+                        }
+                    }
+                    .img {
+                        flex: 0;
+                        float: right;
+                        .coin-image {
+                            float: left;
+                            mix-blend-mode: multiply;
+                            width: 45px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
         }
     }
 }

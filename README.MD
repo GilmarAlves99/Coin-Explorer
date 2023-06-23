@@ -1,6 +1,6 @@
 # Coin-Explorer 
 
-Descrição : Coin-Explorer foi feito para listar as moedas digititais disponiveis pela API da CryptoCompare.
+Descrição : Coin-Explorer foi feito para listar as moedas digititais disponiveis pela API da CoinGecko.
 
 Link : <a href=""> visualize o projeto </a>
 
@@ -52,7 +52,6 @@ DICS: Insere documentação
 TEST: Implementa testes automatizados
 PERF:Ajustes de performace
 CI: Ajustes na configuração
-BUILD: Ajustes na configuração
 </pre>
 
 

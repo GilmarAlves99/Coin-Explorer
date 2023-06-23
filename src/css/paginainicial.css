@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Russo+One&display=swap");
 body {
+  font-family: "Bacasime Antique", serif;
+  font-size: 1.5em;
   margin: 0;
   padding: 0;
   background-color: #140f07;
@@ -14,29 +17,70 @@ body header nav div {
   align-items: center;
   flex: 1;
   color: #f8e4f6;
+  font-weight: 900;
 }
 body section {
   display: flex;
 }
-body section main {
-  flex: 1;
+body section main.sobre {
+  flex: 1.5;
   text-align: center;
   display: inherit;
   justify-content: center;
   align-items: center;
-  background-color: #4760b8;
   position: relative;
   height: calc(100vh - 50px);
 }
-body section main h1 {
+body section main.sobre h1 {
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
+  color: #f8e4f6;
+  font-size: 2em;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 5px;
 }
-body section aside {
-  background-color: #929dfb;
+body section aside.criptos {
+  background-color: #f8e4f6;
+  color: #112b58;
   flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body section aside.criptos h2 {
+  font-size: 2em;
+}
+body section aside.criptos div {
+  width: 40%;
+  display: initial;
+  flex-direction: column;
+}
+body section aside.criptos div .moeda {
+  box-sizing: border-box;
+  padding: 0;
+  width: calc(100% - 20px);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body section aside.criptos div .moeda .nome {
+  flex: 1;
+}
+body section aside.criptos div .moeda .nome span {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+body section aside.criptos div .moeda .img {
+  flex: 0;
+  float: right;
+}
+body section aside.criptos div .moeda .img .coin-image {
+  float: left;
+  mix-blend-mode: multiply;
+  width: 45px;
+  height: auto;
 }
 
 /*# sourceMappingURL=paginainicial.css.map */
