@@ -1,0 +1,44 @@
+                        @media screen and (max-width:820px) {
+                            body {
+                                header {
+                                    nav {
+                                        div:nth-child(1) {
+                                            flex: 1.5;
+                                        }
+                                    }
+                                }
+                                section {
+                                    flex-direction: column;
+                                    position: relative;
+                                    aside.criptos {
+                                        h2 {
+                                            margin: 0;
+                                            font-size: 1.6em;
+                                        }
+                                        div {
+                                            .moeda {
+                                                .nome {
+                                                    span {
+                                                        font-size: 1.3rem;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                article {
+                                    flex-direction: column;
+                                    section,
+                                    aside {
+                                        width: 100%;
+                                        margin-left: 0px;
+                                    }
+                                    aside {
+                                        display: inherit;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }

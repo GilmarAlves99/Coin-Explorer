@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #140f07;
+  color: #f8e4f6;
 }
 body header nav {
   display: flex;
@@ -16,11 +17,11 @@ body header nav div {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #f8e4f6;
   font-weight: 900;
 }
 body section {
   display: flex;
+  height: 100vh;
 }
 body section main.sobre {
   flex: 1.5;
@@ -28,8 +29,6 @@ body section main.sobre {
   display: inherit;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: calc(100vh - 50px);
 }
 body section main.sobre h1 {
   justify-content: center;
@@ -47,12 +46,13 @@ body section aside.criptos {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: auto;
 }
 body section aside.criptos h2 {
   font-size: 2em;
 }
 body section aside.criptos div {
-  width: 40%;
+  width: 50%;
   display: initial;
   flex-direction: column;
 }
@@ -65,22 +65,89 @@ body section aside.criptos div .moeda {
   flex-direction: row;
   align-items: center;
 }
-body section aside.criptos div .moeda .nome {
-  flex: 1;
-}
 body section aside.criptos div .moeda .nome span {
   font-size: 1.5rem;
   font-family: "Courier New", Courier, monospace;
 }
-body section aside.criptos div .moeda .img {
-  flex: 0;
-  float: right;
-}
 body section aside.criptos div .moeda .img .coin-image {
-  float: left;
+  float: right;
   mix-blend-mode: multiply;
   width: 45px;
-  height: auto;
+  height: 45px;
+}
+body article {
+  color: #f8e4f6;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 50px 0 0 0;
+}
+body article section {
+  margin: 0 auto;
+  display: block;
+  flex: 1.5;
+  height: 100%;
+}
+body article section h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 5px;
+}
+body article section #lista {
+  position: relative;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+body article section #lista .moedastotais {
+  border-bottom: 2px solid #f8e4f6;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  width: calc(70% - 20px);
+  margin: 0 auto;
+}
+body article section #lista .moedastotais .nome {
+  position: relative;
+  width: auto;
+  width: 100%;
+}
+body article section #lista .moedastotais .nome span {
+  font-size: 1em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+}
+body article section #lista .moedastotais .img {
+  display: flex;
+  align-items: center;
+}
+body article section #lista .moedastotais .img .coin-image {
+  mix-blend-mode: multiply;
+  width: 45px;
+  height: 45px;
+}
+body article aside {
+  flex: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+body article aside h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+body article aside p {
+  text-align: center;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=paginainicial.css.map */
