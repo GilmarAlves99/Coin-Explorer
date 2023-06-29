@@ -1,4 +1,5 @@
-@media screen and (max-width:720px) {
+@media screen and (max-width: 700px),
+(max-height: 400px) {
     body {
         header {
             nav {
@@ -11,6 +12,8 @@
             flex-direction: column;
             position: relative;
             aside.criptos {
+                flex: 5;
+                height: 2000px;
                 h2 {
                     margin: 0;
                     font-size: 1.6em;
@@ -28,6 +31,7 @@
         }
         article {
             flex-direction: column;
+            margin-top: 10px;
             section.listagem,
             aside {
                 width: 100%;
@@ -42,8 +46,8 @@
         }
         main.grafico {
             canvas#myChart {
-                width: 80%;
-                height: 300px;
+                width: 90%;
+                height: 3000px;
             }
         }
         footer {

@@ -1,10 +1,14 @@
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px), (max-height: 400px) {
   body header nav div:nth-child(1) {
     flex: 1.5;
   }
   body section {
     flex-direction: column;
     position: relative;
+  }
+  body section aside.criptos {
+    flex: 5;
+    height: 2000px;
   }
   body section aside.criptos h2 {
     margin: 0;
@@ -15,6 +19,7 @@
   }
   body article {
     flex-direction: column;
+    margin-top: 10px;
   }
   body article section.listagem,
   body article aside {
@@ -28,8 +33,8 @@
     align-items: center;
   }
   body main.grafico canvas#myChart {
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: 3000px;
   }
   body footer {
     flex-direction: column;

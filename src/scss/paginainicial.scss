@@ -160,9 +160,7 @@ body {
         align-items: center;
         canvas#myChart {
             width: 500px;
-            /* Adjust the width as needed */
             height: 300px;
-            /* Adjust the height as needed */
         }
     }
     footer {
@@ -170,10 +168,11 @@ body {
         padding: 20px;
         display: flex;
         flex-direction: row;
+        background-color: $azulEscuro;
         div {
             display: inherit;
             flex: 1;
-            text-align: left;
+            text-align: center;
             font-size: 0.6em;
             justify-content: center;
             flex-direction: column;
@@ -194,6 +193,15 @@ body {
                 &:hover {
                     color: $azulClaro;
                 }
+            }
+        }
+        div:last-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            i {
+                font-size: 2em;
             }
         }
     }

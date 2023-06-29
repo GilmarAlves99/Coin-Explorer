@@ -151,20 +151,19 @@ body main.grafico {
 }
 body main.grafico canvas#myChart {
   width: 500px;
-  /* Adjust the width as needed */
   height: 300px;
-  /* Adjust the height as needed */
 }
 body footer {
   position: relative;
   padding: 20px;
   display: flex;
   flex-direction: row;
+  background-color: #112b58;
 }
 body footer div {
   display: inherit;
   flex: 1;
-  text-align: left;
+  text-align: center;
   font-size: 0.6em;
   justify-content: center;
   flex-direction: column;
@@ -186,6 +185,15 @@ body footer div a {
 }
 body footer div a:hover {
   color: #929dfb;
+}
+body footer div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer div:last-child i {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=paginainicial.css.map */
