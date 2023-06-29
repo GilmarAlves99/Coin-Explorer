@@ -1,4 +1,4 @@
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 720px) {
   body header nav div:nth-child(1) {
     flex: 1.5;
   }
@@ -16,7 +16,7 @@
   body article {
     flex-direction: column;
   }
-  body article section,
+  body article section.listagem,
   body article aside {
     width: 100%;
     margin-left: 0px;
@@ -26,6 +26,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  body main.grafico canvas#myChart {
+    width: 80%;
+    height: 300px;
+  }
+  body footer {
+    flex-direction: column;
+  }
+  body footer div ul {
+    padding: 0;
+    margin-bottom: 20px;
   }
 }
 

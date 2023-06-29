@@ -99,17 +99,13 @@ body {
             display: block;
             flex: 1.5;
             height: 100%;
-            h2 {
-                margin: 0;
-                text-align: center;
-                font-size: 1em;
-                font-family: 'Courier New', Courier, monospace;
-                letter-spacing: 5px;
-            }
+            margin-bottom: 20px;
             #lista {
                 position: relative;
                 padding: 10px 0;
                 display: flex;
+                overflow-y: scroll;
+                height: 500px;
                 flex-direction: column;
                 .moedastotais {
                     border-bottom: 2px solid $branco;
@@ -124,10 +120,13 @@ body {
                         width: auto;
                         width: 100%;
                         span {
-                            font-size: 1.0em;
                             font-weight: bold;
-                            position: absolute;
-                            bottom: 0;
+                            display: flex;
+                        }
+                        span:nth-child(2) {
+                            font-size: .6em;
+                            font-family: 'Courier New', Courier, monospace;
+                            letter-spacing: 0px;
                         }
                     }
                     .img {
@@ -147,15 +146,54 @@ body {
             position: relative;
             display: flex;
             flex-direction: column;
-            h2 {
-                margin: 0;
-                text-align: center;
-                font-size: 1em;
-                font-family: 'Courier New', Courier, monospace;
-            }
+            justify-content: center;
             p {
                 text-align: center;
                 padding: 5px;
+            }
+        }
+    }
+    main.grafico {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        canvas#myChart {
+            width: 500px;
+            /* Adjust the width as needed */
+            height: 300px;
+            /* Adjust the height as needed */
+        }
+    }
+    footer {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        div {
+            display: inherit;
+            flex: 1;
+            text-align: left;
+            font-size: 0.6em;
+            justify-content: center;
+            flex-direction: column;
+            ul {
+                list-style-type: none;
+            }
+            li {
+                font-weight: bold;
+            }
+            li:first-child {
+                font-size: 1.5em;
+                text-transform: uppercase;
+            }
+            a {
+                text-decoration: none;
+                display: block;
+                color: $branco;
+                &:hover {
+                    color: $azulClaro;
+                }
             }
         }
     }

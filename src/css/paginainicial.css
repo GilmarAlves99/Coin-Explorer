@@ -90,18 +90,14 @@ body article section {
   display: block;
   flex: 1.5;
   height: 100%;
-}
-body article section h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 1em;
-  font-family: "Courier New", Courier, monospace;
-  letter-spacing: 5px;
+  margin-bottom: 20px;
 }
 body article section #lista {
   position: relative;
   padding: 10px 0;
   display: flex;
+  overflow-y: scroll;
+  height: 500px;
   flex-direction: column;
 }
 body article section #lista .moedastotais {
@@ -119,10 +115,13 @@ body article section #lista .moedastotais .nome {
   width: 100%;
 }
 body article section #lista .moedastotais .nome span {
-  font-size: 1em;
   font-weight: bold;
-  position: absolute;
-  bottom: 0;
+  display: flex;
+}
+body article section #lista .moedastotais .nome span:nth-child(2) {
+  font-size: 0.6em;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0px;
 }
 body article section #lista .moedastotais .img {
   display: flex;
@@ -138,16 +137,55 @@ body article aside {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-body article aside h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 1em;
-  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
 }
 body article aside p {
   text-align: center;
   padding: 5px;
+}
+body main.grafico {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main.grafico canvas#myChart {
+  width: 500px;
+  /* Adjust the width as needed */
+  height: 300px;
+  /* Adjust the height as needed */
+}
+body footer {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+body footer div {
+  display: inherit;
+  flex: 1;
+  text-align: left;
+  font-size: 0.6em;
+  justify-content: center;
+  flex-direction: column;
+}
+body footer div ul {
+  list-style-type: none;
+}
+body footer div li {
+  font-weight: bold;
+}
+body footer div li:first-child {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+body footer div a {
+  text-decoration: none;
+  display: block;
+  color: #f8e4f6;
+}
+body footer div a:hover {
+  color: #929dfb;
 }
 
 /*# sourceMappingURL=paginainicial.css.map */
