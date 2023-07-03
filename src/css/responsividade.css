@@ -39,6 +39,9 @@
   body footer {
     flex-direction: column;
   }
+  body footer div {
+    font-size: 0.7em;
+  }
   body footer div ul {
     padding: 0;
     margin-bottom: 20px;

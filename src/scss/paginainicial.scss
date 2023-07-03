@@ -148,6 +148,7 @@ body {
             flex-direction: column;
             justify-content: center;
             p {
+                font-size: 0.8em;
                 text-align: center;
                 padding: 5px;
             }
@@ -172,7 +173,6 @@ body {
         div {
             display: inherit;
             flex: 1;
-            text-align: center;
             font-size: 0.6em;
             justify-content: center;
             flex-direction: column;
@@ -181,6 +181,7 @@ body {
             }
             li {
                 font-weight: bold;
+                text-align: center;
             }
             li:first-child {
                 font-size: 1.5em;

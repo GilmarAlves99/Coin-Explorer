@@ -6,10 +6,10 @@ Link : <a href="https://gilmaralves99.github.io/Coin-Explorer/src/" target="_bla
 
 Lista :
 
-- [ ] Etapa 1
-- [ ] Etapa 2
-- [ ] Etapa 3
-- [ ] Etapa 4
+- [X] Etapa 1
+- [X] Etapa 2
+- [X] Etapa 3
+- [X] Etapa 4
 
 Etapas :
 
